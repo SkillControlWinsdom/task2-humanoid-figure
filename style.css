@@ -1,0 +1,522 @@
+
+ .logo-image{
+  margin-right: 100px;
+ }
+
+ header {
+
+  background: transparent;
+}
+
+
+  .head {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+/* Typing-text 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ebbdac;
+  }
+}
+
+h3 {
+  overflow: hidden; 
+  border-right: 0.15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 0.15em; 
+  color: #fff;
+  animation:
+    typing 3s steps(16,end),
+    blink-caret 0.75s step-end infinite;
+   */ 
+
+
+/*Divider*/
+.divider {
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #fff;
+}
+
+.divider span {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: #222631;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  position: relative;
+  top: -20px;
+}
+
+
+  .col-md-6 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+
+
+  .col-md-6:last-child {
+    background: #F3904F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    
+  }
+
+
+.navbar{
+    background-color: transparent;
+}
+
+.this-is-picture{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    position: relative;
+  }
+
+
+/*
+.mt-4{
+  background-color:#212121;
+}
+*/
+
+
+
+.head{
+background: rgb(235,189,172);
+height: 340px;
+width: 300px;
+border-radius: 70% 70% 100% 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.eyes, .brows{
+  position: absolute;
+  width: 195px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+
+.eye{
+  background-color: #fbfffe;
+  height: 36px;
+  width: 65px;
+  border-radius: 100%;
+  border-top: 3px solid rgb(235, 169, 159);
+  border-bottom: 3px solid rgb(235, 169, 159);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+}
+
+
+.eye::before{
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color:rgb(105,73,52);
+  border-radius: 100%;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.eye::after{
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color:rgb(22,20,12);
+  border-radius: 100%;
+  margin-right: 5%;
+  margin-bottom: 7px;
+}
+
+
+
+
+.brow {
+  width: 80px;
+  height: 42px;
+  border-top: 15px solid rgb(58, 39, 35);
+  border-radius: 100%;
+  margin-bottom: 20%;
+}
+
+.brow:first-child {
+  margin-right: 25px; /* Adjust this value to move the left brow more to the right */
+}
+
+.brow:last-child {
+  margin-left: 25px; /* Adjust this value to move the right brow more to the left */
+}
+
+.mustache{
+transition: transform 250ms;
+}
+
+.mustache:hover {
+  transform: translateY(-10px);
+}
+
+
+.first-card .brows:hover .brow {
+  transform: translateY(-5px); /* Move the eyebrows up by 5 pixels on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Entire-head */
+.head {
+
+  transition: transform 0.3s ease;
+}
+
+.head:hover {
+  transform: scale(1.1);
+}
+
+
+.card-container {
+  position: relative;
+}
+.card {
+  
+  padding: 20px;
+  transition: transform 0.3s ease; /* Add a smooth transition effect for scaling */
+  border-radius: 30px;
+  background: #212121;
+}
+ /* background-image: url(images/0_0\ \(1\).png); */
+
+ /*
+ .card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+*/
+
+/* moving beard :D */
+.first-card .beard {
+  width: 18rem;
+  height: 17rem;
+  border-radius: 45%;
+  box-shadow: 0.2rem 3rem 0 0 #3b2c27;
+  margin-top: 20px;
+}
+
+.first-card .beard {
+  transition: transform 0.3s ease;
+}
+
+.beard:hover {
+  transform: translateY(-10px);
+}
+
+/* Mustache */
+.third-card .mustache {
+  width: 120px;
+  height: 24px;
+  background: #392b22;
+  border-radius: 50%;
+  border-top-left-radius: 210px;
+  border-top-right-radius: 210px;
+  margin-top: 160px;
+  transition: transform 0.3s ease;
+}
+
+.third-card:hover .mustache {
+  animation: moveMustacheHover 2s infinite;
+}
+
+@keyframes moveMustache {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveMustacheHover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.second-card:hover {
+
+  transform: rotate(5deg); 
+
+}
+
+
+.third-card:hover {
+ 
+  transform: skewX(-10deg); 
+
+}
+
+
+
+
+.nose{
+  position: absolute;
+  border: 4px solid rgb(235, 169, 159);
+  width: 40px;
+  height: 30px;
+  border-radius: 0 0 100% 100%;
+  border-top: none;
+  margin-top: 100px;
+}
+
+.mustache{
+  
+  position: absolute;
+  /*
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  */
+  width: 120px;
+  height: 24px;
+  background: #392b22;
+  border-radius: 50%;
+  
+  border-top-left-radius: 210px;
+  border-top-right-radius: 210px;
+  margin-top: 160px;
+  
+
+}
+  /*-webkit-clip-path: polygon(38% 85%, 38% 80%, 41% 77%, 43% 75%, 47% 74%, 50% 74%, 52% 75%, 55% 75%, 58% 76%, 60% 78%, 62% 82%, 62% 86%, 60% 83%, 59% 81%, 57% 80%, 54% 80%, 51% 78%, 50% 77%, 48% 78%, 44% 80%, 41% 81%, 38% 85%);
+  clip-path: polygon(38% 85%, 38% 80%, 41% 77%, 43% 75%, 47% 74%, 50% 74%, 52% 75%, 55% 75%, 58% 76%, 60% 78%, 62% 82%, 62% 86%, 60% 83%, 59% 81%, 57% 80%, 54% 80%, 51% 78%, 50% 77%, 48% 78%, 44% 80%, 41% 81%, 38% 85%);
+  /
+ 
+  width: 50px;
+  height: 50px;
+  background: black;
+  clip-path: polygon(19% 67%, 46% 54%, 76% 64%, 76% 67%, 46% 60%, 21% 71%);
+  background-image: url(images/beard.svg);
+  clip-path: polygon(19% 67%, 46% 54%, 76% 64%, 76% 67%, 46% 60%, 21% 71%);
+  */
+
+
+ .beardbg{
+  position: absolute;
+ }
+
+ 
+.beard {
+  width: 18rem;
+  height: 17rem;
+  border-radius: 45%;
+  box-shadow: 0.2rem 3rem 0 0 #3b2c27;
+  margin-top: 20px;
+
+}
+
+
+.mouth{
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background: #db9280;
+  margin-top: 220px;
+
+  border-radius: 50%;
+  box-shadow: 3.5rem 3rem 0 0 #fff77e;
+}
+
+
+
+
+.hair{
+  position: absolute;
+  margin-bottom: 0px;
+  border-radius: 50% 100% 0 0;
+  width: 650px;
+  height: 630px;
+  background: url(images/download.svg)
+
+}
+
+.ears{
+  position: absolute;
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  
+  
+}
+
+.ear{
+  width: 25px;
+  height: 100px;
+  border: 2px solid rgb(205,167,157);
+  background:#df9d94;
+  border-radius: 0 80% 80% 0;
+  
+}
+
+
+.ear:first-child{
+  border-radius: 100% 0 0 100%;
+}
+
+
+
+.card-footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.divider {
+  margin: 10px 0;
+  height: 1px;
+  background-color: #ccc;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.divider {
+  margin: 10px 0;
+  height: 1px;
+  background-color: #ccc;
+}
